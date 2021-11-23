@@ -1,4 +1,12 @@
 terraform {
+  backend "s3" {
+    bucket                      = "webmdm1-mailly"
+    key                         = "terraform.tfstate"
+    region                      = "fr-par"
+    endpoint                    = "https://s3.fr-par.scw.cloud"
+    skip_credentials_validation = true
+    skip_region_validation      = true
+  }
   required_providers {
     scaleway = {
       source = "scaleway/scaleway"
