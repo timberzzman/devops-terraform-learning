@@ -1,0 +1,12 @@
+[Unit]
+Description=Launching the app with docker
+After=docker.service
+Requires=docker.service
+
+[Service]
+TimeoutStartSec=0
+Restart=on-failure
+ExecStart=/bin/bash /root/docker-run.sh
+
+[Install]
+WantedBy=multi-user.target

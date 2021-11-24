@@ -61,7 +61,8 @@ jobs:
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID}}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       SCW_DEFAULT_PROJECT_ID: ${{ secrets.SCALEWAY_PROJECT_ID }}
-      TF_VAR_SSH_KEY: ${{ secrets.SSH_KEY }}
+      # Exercice 06 : Automatic configuration
+      # TF_VAR_SSH_KEY: ${{ secrets.SSH_KEY }}
       TF_VAR_DB_USERNAME: ${{ secrets.DB_USERNAME }}
       TF_VAR_DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
 
